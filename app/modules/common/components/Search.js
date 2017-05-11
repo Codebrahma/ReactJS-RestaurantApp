@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 
+import '../styles/Search.scss';
+
 class Search extends Component {
   constructor(props) {
     super(props);
