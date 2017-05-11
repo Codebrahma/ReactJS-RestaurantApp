@@ -12,6 +12,10 @@ class Search extends Component {
 
   onSelect = (itemValue) => {
     console.log(itemValue);
+
+    this.setState({
+      selectedValue: '',
+    });
   }
 
   handleInputChange = (e) => {
