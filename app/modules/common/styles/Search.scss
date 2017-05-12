@@ -1,51 +1,35 @@
 .search-wrapper{
+  height: 35px;
   display: flex;
-  flex-direction: column;
-  border: 1px solid #bbb;
-  border-radius: 4px;
-  .input-wrapper{
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex: 1;
-    flex-basis: 100%;
-    &.inverted{
-      flex-direction: row-reverse;
-      input{
-        padding: 0 10px;
-      }
-    }
-    .search-icon{
-      transform: rotate(-45deg);
-      font-size: 21px;
-      color: #bbb;
-      padding: 10px;
-    }
-    input{
-      color: #666;
-      font-size: 14px;
-      height: 100%;
-      padding: 0;
-      flex: 1;
-      border: 0;
-      border-radius: 4px;
-      &:focus{
-        outline: none;
-      }
+  flex-direction: row;
+  align-items: center;
+  &.inverted{
+    flex-direction: row-reverse;
+    input[role="combobox"]{
+      padding: 0 30px 0 15px;
     }
   }
-  .search-suggestions{
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    padding-bottom: 4px;
-    border-top: 1px solid #eee;
-    .item{
-      padding: 5px 15px;
-      &:hover{
-        background: whitesmoke;
-      }
+  .search-icon{
+    position: absolute;
+    padding: 0 10px;
+    span{
+      font-size: 21px;
+      color: #bbb;
+      display: block;
+      transform: rotate(-45deg);
+    }
+  }
+  input[role="combobox"]{
+    width: 100%;
+    height: 100%;
+    color: #777;
+    font-size: 14px;
+    padding: 0 15px 0 30px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    &:focus{
+      outline: none;
     }
   }
 }
