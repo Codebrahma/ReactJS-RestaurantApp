@@ -8,9 +8,7 @@ class Button extends Component {
     } = this.props;
 
     return (
-      <button
-        onClick={e => clickHandler(e)}
-      >
+      <button onClick={e => clickHandler(e)}>
         {btnText}
       </button>
     );
@@ -18,8 +16,12 @@ class Button extends Component {
 }
 
 Button.propTypes = {
-  btnText: PropTypes.string.isRequired,
+  btnText: PropTypes.node,
   clickHandler: PropTypes.func.isRequired,
+};
+
+Button.defaultProps = {
+  btnText: 'Button',
 };
 
 export default Button;
