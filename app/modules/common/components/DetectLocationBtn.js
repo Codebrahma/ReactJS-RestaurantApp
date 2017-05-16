@@ -51,7 +51,7 @@ class DetectLocationBtn extends Component {
 }
 
 DetectLocationBtn.propTypes = {
-  onDetect: PropTypes.func,
+  onDetect: PropTypes.func.isRequired,
   children: PropTypes.node,
 };
 
