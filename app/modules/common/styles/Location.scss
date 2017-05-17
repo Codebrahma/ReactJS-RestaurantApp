@@ -1,0 +1,20 @@
+.location-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  .places__wrapper{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .places__input{
+      width: 100%;
+      min-height: 30px;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    .places__autocomplete-wrapper{
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+  }
+}
