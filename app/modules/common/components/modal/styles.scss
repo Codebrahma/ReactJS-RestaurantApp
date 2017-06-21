@@ -1,0 +1,44 @@
+.modal-box {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2800;
+  transition: opacity 1s ease-in;
+  pointer-events: auto;
+  overflow-y: auto;
+  padding: 0 30px;
+  background: rgba(0,0,0,.85);
+  > div {
+    position: relative;
+    margin: 28px auto;
+    max-width: 560px;
+    border: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+    .modal-title {
+      font-size: 1.42857143rem;
+      line-height: 1.1em;
+      font-weight: 700;
+      border-bottom: 1px solid #e7e7e7;
+      padding: 17px 21px;
+
+      i {
+        float: right;
+        color: #33373D;
+        cursor: pointer;
+      }
+    }
+
+    .modal-body {
+      min-height: 350px;
+      background-color: #fff;
+      padding: 17px 21px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}
