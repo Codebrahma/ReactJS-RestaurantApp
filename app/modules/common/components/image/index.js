@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import noImage from './no-image.png';
 import './styles.scss';
 
 /**
@@ -45,6 +46,7 @@ Image.propTypes = {
 
 Image.defaultProps = {
   style: {},
+  src: noImage,
 };
 
 export default Image;
