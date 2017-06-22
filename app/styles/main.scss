@@ -11,3 +11,30 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
+
+a {
+  color: #33373D;
+  text-decoration: none;
+  &, &:active, &:hover {
+    outline: 0;
+  }
+
+  &:hover {
+    color: #222d3d;
+    text-decoration: none;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
