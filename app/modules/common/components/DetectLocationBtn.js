@@ -42,10 +42,11 @@ class DetectLocationBtn extends Component {
 
     return (
       <Button
-        clickHandler={this.onClickHandler}
-        btnText={children || 'Detect'}
         {...this.props}
-      />
+        onClick={this.onClickHandler}
+      >
+        {children || 'Detect'}
+      </Button>
     );
   }
 }
