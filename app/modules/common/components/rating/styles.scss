@@ -1,0 +1,52 @@
+.rating {
+  &.level-0 {
+    background: #cdcdcd !important;
+    min-width: 20px;
+    border-color: #cdcdcd !important
+  }
+
+  &.level-1 {
+    background: #CD1C26 !important;
+    border-color: #CD1C26 !important;
+  }
+
+  &.level-2 {
+    background: #DE1D0F !important;
+    border-color: #DE1D0F !important;
+  }
+
+  &.level-3 {
+    background: #FF7800 !important;
+    border-color: #FF7800 !important;
+  }
+
+  &.level-4 {
+    background: #FFBA00 !important;
+    border-color: #FFBA00 !important;
+  }
+
+  &.level-5 {
+    background: #CDD614 !important;
+    border-color: #CDD614 !important;
+  }
+
+  &.level-6 {
+    background: #9ACD32 !important;
+    border-color: #9ACD32 !important;
+  }
+
+  &.level-7 {
+    background: #5BA829 !important;
+    border-color: #5BA829 !important;
+  }
+
+  &.level-8 {
+    background: #3F7E00 !important;
+    border-color: #3F7E00 !important;
+  }
+
+  &.level-9 {
+    background: #305D02 !important;
+    border-color: #305D02 !important;
+  }
+}
