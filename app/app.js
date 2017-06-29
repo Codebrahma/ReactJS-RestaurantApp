@@ -14,6 +14,7 @@ import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
+import Provider from 'react-redux/lib/components/Provider';
 import useScroll from 'react-router-scroll';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { syncHistoryWithStore } from 'react-router-redux';
@@ -63,16 +64,18 @@ const rootRoute = {
 
 const render = () => {
   ReactDOM.render(
-    <Router
-      history={history}
-      routes={rootRoute}
-      render={
+    <Provider store={store}>
+      <Router
+        history={history}
+        routes={rootRoute}
+        render={
 
-        //  Scroll to top when going to a new page, imitating default browser
-        //  behaviour
-        applyRouterMiddleware(useScroll())
-      }
-    />,
+          //  Scroll to top when going to a new page, imitating default browser
+          //  behaviour
+          applyRouterMiddleware(useScroll())
+        }
+      />
+    </Provider>,
     document.getElementById('app')
   );
 };
